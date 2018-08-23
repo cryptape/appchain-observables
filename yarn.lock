@@ -16,9 +16,9 @@
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
-"@nervos/web3-plugin@^0.17.8":
-  version "0.17.10"
-  resolved "https://registry.npmjs.org/@nervos/web3-plugin/-/web3-plugin-0.17.10.tgz#f3b189af08f1c8798c1c1e748f7cca95af1d2b6f"
+"@nervos/plugin@^0.18.1":
+  version "0.18.1"
+  resolved "https://registry.npmjs.org/@nervos/plugin/-/plugin-0.18.1.tgz#24b85fe9ea1c803b97cc9b2b7c27f0d3fe2dd5f6"
   dependencies:
     "@types/google-protobuf" "^3.2.7"
     axios "^0.18.0"

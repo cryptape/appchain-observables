@@ -1,6 +1,8 @@
-const { default: NervosObservables } = require('../lib')
+const {
+  default: NervosObservables
+} = require('../lib')
 
-const SERVER = '121.196.200.225:1337'
+const SERVER = 'http://47.94.105.230:1337'
 const INTERVAL = 10
 const RESERVED_RECORDS = 10
 

@@ -1,9 +1,9 @@
-![Travis](https://travis-ci.org/cryptape/cita-observables.svg?branch=develop)
+![Travis](https://travis-ci.org/cryptape/nervos-observables.svg?branch=develop)
 [![npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/@nervos/observables)
-[![MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/cryptape/cita-observables)
+[![MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/cryptape/nervos-observables)
 [![AppChain](https://img.shields.io/badge/made%20for-Nervos%20AppChain-blue.svg)](https://appchain.nervos.org/)
 
-# CITA-Observables
+# Nervos-Observables
 
 Observable based [CITA RPC](https://cryptape.github.io/cita/usage-guide/rpc/) toolkit
 
@@ -14,19 +14,19 @@ Observable based [CITA RPC](https://cryptape.github.io/cita/usage-guide/rpc/) to
 # Installing
 
 ```bash
-$ yarn add @cita/observables
+$ yarn add @nervos/observables
 ```
 
 # Example
 
 ```javascript
-import CITAObservables from 'cita-observables'
+import NervosObservables from 'nervos-observables'
 
 const SERVER = 'localhost:1337'
 const INTERVAL = 10
 const RESERVED_RECORDS = 10
 
-const citaObservables = new CITAObservables({
+const nervosObservables = new NervosObservables({
   server: SERVER,
   interval: INTERVAL,
   reservedRecords: RESERVED_RECORDS,
@@ -39,7 +39,7 @@ const citaObservables = new CITAObservables({
  * @param {boolean} observed - switch of observable, default to true, observing the peerCount
  * @return {string} count - peer count
  */
-citaObservables.peerCount(INTERVAL).subscribe(count => {
+nervosObservables.peerCount(INTERVAL).subscribe(count => {
   console.log(count)
 })
 
@@ -50,7 +50,7 @@ citaObservables.peerCount(INTERVAL).subscribe(count => {
  * @param {boolean} observed - switch of observable, default to true, observing the new block number
  * @return {string} blockNumber - block number
  */
-citaObservables.newBlockNumber(INTERVAL).subscribe(blockNumber => {
+nervosObservables.newBlockNumber(INTERVAL).subscribe(blockNumber => {
   console.log(blockNumber)
 })
 
@@ -60,7 +60,7 @@ citaObservables.newBlockNumber(INTERVAL).subscribe(blockNumber => {
  * @param {string} blockNumber
  * @return {object} block
  */
-citaObservables.blockByNumber(blockNumber).subscribe(block => {
+nervosObservables.blockByNumber(blockNumber).subscribe(block => {
   console.log(block)
 })
 
@@ -71,7 +71,7 @@ citaObservables.blockByNumber(blockNumber).subscribe(block => {
  * @param {boolean} observed - switch of observable, default to true, observing the new block
  * @return {object} block
  */
-citaObservables.newBlockByNumber(INTERVAL).subscribe(block => {
+nervosObservables.newBlockByNumber(INTERVAL).subscribe(block => {
   console.log(block)
 })
 
@@ -81,7 +81,7 @@ citaObservables.newBlockByNumber(INTERVAL).subscribe(block => {
  * @param {string} hash - block hash
  * @return {object} block
  */
-citaObservables.blockByHash(HASH).subscribe(block => {
+nervosObservables.blockByHash(HASH).subscribe(block => {
   console.log(block)
 })
 
@@ -91,7 +91,7 @@ citaObservables.blockByHash(HASH).subscribe(block => {
  * @param {string} signedTransaction - signed transaction
  * @return {object} result
  */
-citaObservables.sendSignedTransaction(signedTransaction).subscribe(result => {
+nervosObservables.sendSignedTransaction(signedTransaction).subscribe(result => {
   console.log(result)
 })
 
@@ -99,6 +99,6 @@ citaObservables.sendSignedTransaction(signedTransaction).subscribe(result => {
  * @function newBlockByNumberSubject
  * @description subscribe to new block
  */
-citaObservable.newBlockByNumberSubject.subscribe(console.log)
-citaObservable.newBlockByNumberSubject.connect()
+nervosObservable.newBlockByNumberSubject.subscribe(console.log)
+nervosObservable.newBlockByNumberSubject.connect()
 ```

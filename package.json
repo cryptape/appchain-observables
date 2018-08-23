@@ -2,7 +2,7 @@
   "name": "@nervos/observables",
   "version": "0.17.7",
   "main": "lib/index.js",
-  "repository": "https://github.com/Keith-CY/cita-observables.git",
+  "repository": "https://github.com/cryptape/nervos-observables.git",
   "author": "Keith <keithwhisper@gmail.com>",
   "types": "lib/index.d.ts",
   "license": "MIT",
@@ -17,7 +17,7 @@
     "typescript": "^2.8.1"
   },
   "dependencies": {
-    "@nervos/web3-plugin": "^0.17.10",
+    "@nervos/plugin": "^0.18.1",
     "@reactivex/rxjs": "^5.5.8"
   },
   "jest": {

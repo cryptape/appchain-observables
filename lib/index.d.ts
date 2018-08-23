@@ -1,7 +1,7 @@
 /// <reference path="../typings/index.d.ts" />
 import { Observable, ConnectableObservable } from '@reactivex/rxjs';
-import { Nervos } from '@nervos/web3-plugin';
-import { Chain, RpcResult } from '@nervos/web3-plugin/lib/typings/index.d';
+import { Nervos } from '@nervos/plugin';
+import { Chain, RpcResult } from '@nervos/plugin/lib/typings/index.d';
 export default class NervosObservables {
     server: ServerAddr;
     interval: CITAInterval;
