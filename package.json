@@ -17,7 +17,7 @@
     "typescript": "^2.8.1"
   },
   "dependencies": {
-    "@nervos/plugin": "^0.18.1",
+    "@nervos/plugin": "0.18.3",
     "@reactivex/rxjs": "^5.5.8"
   },
   "jest": {
