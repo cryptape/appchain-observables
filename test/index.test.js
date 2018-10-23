@@ -2,7 +2,7 @@ const {
   default: NervosObservables
 } = require('../lib')
 
-const SERVER = 'http://47.94.105.230:1337'
+const SERVER = 'https://node.cryptape.com'
 const INTERVAL = 10
 const RESERVED_RECORDS = 10
 
@@ -86,15 +86,23 @@ test('get meta data', () => {
     })
 })
 
-test.skip("get balance of ${'0x627306090abaB3A6e1400e9345bC60c78a8BEf57'}", () => {
+test.skip("get balance of ${'0x627306090abaB3A6e1400e9345bC60c78a8BEf57'}", (done) => {
   nervosObservables
     .getBalance({
       addr: '0x627306090abaB3A6e1400e9345bC60c78a8BEf57',
     })
     .subscribe(balance => {
-      expect.assertion(1)
       expect(balance.startsWith('0x')).toBeTruthy()
+      done()
     })
+})
+
+
+test.skip("get quota price", (done) => {
+  nervosObservables.getQuotaPrice('latest').subscribe(price => {
+    expect(price.slice(0, 2)).toBe('0x')
+    done()
+  })
 })
 
 //TODO: sendTransaction

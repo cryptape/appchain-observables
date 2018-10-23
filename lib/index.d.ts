@@ -7,7 +7,7 @@ export default class NervosObservables {
     interval: CITAInterval;
     NervosWeb3: Nervos;
     newBlockByNumberSubject: ConnectableObservable<any>;
-    constructor({server, interval, reservedRecords}: {
+    constructor({ server, interval, reservedRecords, }: {
         server: ServerAddr;
         interval?: CITAInterval;
         reservedRecords?: ReservedRecords;
@@ -36,6 +36,7 @@ export default class NervosObservables {
         blockNumber: string;
     }) => Observable<RpcResult.Result>;
     getTransaction: (hash: string) => Observable<Chain.TransactionInBlock>;
+    getTransactionReceipt: (hash: string) => Observable<Chain.TransactionReceipt>;
     getTransactionCount: (params: {
         addr: string;
         blockNumber: string;
@@ -56,4 +57,5 @@ export default class NervosObservables {
         addr: string;
         blockNumber: string;
     }) => Observable<string>;
+    getQuotaPrice: (blockNumber?: string) => Observable<RpcResult.Result>;
 }

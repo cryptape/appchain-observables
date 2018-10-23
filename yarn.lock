@@ -18,10 +18,10 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@nervos/plugin@0.18.3":
-  version "0.18.3"
-  resolved "https://registry.npmjs.org/@nervos/plugin/-/plugin-0.18.3.tgz#ac96c456df2bb23cb62bd7f32ae2e98866b69705"
-  integrity sha512-VJClOPWzOSA7FsyAMWo7DU7tK+mV9DnOQk1EXiaDYc4HEJpSRGwsnw1/QkypDNceucNT/D9EPWFIP4nxq1x4Zw==
+"@nervos/plugin@0.18.4":
+  version "0.18.4"
+  resolved "https://registry.npmjs.org/@nervos/plugin/-/plugin-0.18.4.tgz#b6bd1df3bd39c20a7114c884a21b52146c526db1"
+  integrity sha512-ozGRfPW2kZwEmyemeaDE6nRZMZ8rGVuu4fauG0bsEPBwRLA1rpUmxYpHYSdu6Rvr10yM/MjLKOmCDajsqeGY4w==
   dependencies:
     "@types/google-protobuf" "^3.2.7"
     axios "^0.18.0"
