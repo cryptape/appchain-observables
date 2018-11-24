@@ -1,11 +1,11 @@
 /// <reference path="../typings/index.d.ts" />
 import { Observable, ConnectableObservable } from '@reactivex/rxjs';
-import { Nervos } from '@nervos/plugin';
-import { Chain, RpcResult } from '@nervos/plugin/lib/typings/index.d';
-export default class NervosObservables {
+import { AppChain } from '@appchain/plugin';
+import { Chain, RpcResult } from '@appchain/plugin/lib/typings/index.d';
+export default class AppChainObservables {
     server: ServerAddr;
     interval: CITAInterval;
-    NervosWeb3: Nervos;
+    appchainWeb3: AppChain;
     newBlockByNumberSubject: ConnectableObservable<any>;
     constructor({ server, interval, reservedRecords, }: {
         server: ServerAddr;
