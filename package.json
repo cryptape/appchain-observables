@@ -1,6 +1,6 @@
 {
   "name": "@nervos/observables",
-  "version": "0.18.3",
+  "version": "0.20.0",
   "main": "lib/index.js",
   "repository": "https://github.com/cryptape/nervos-observables.git",
   "author": "Keith <keithwhisper@gmail.com>",
